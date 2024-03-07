@@ -1,0 +1,53 @@
+#root{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+.container{
+  background-color: #282626;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  border-radius: 20px;
+  padding: 10px;
+  min-width: 300px;
+
+}
+.input-screen{
+  padding: 10px;
+  font-size: large;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+.input{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.btn1{
+  background-color: blue;
+  font-size: 24px;
+  border: none;
+  padding: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  color: white;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  color: orange;
+}
+.footer input{
+  margin-left: 15px;
+  margin-right: 5px;
+}
