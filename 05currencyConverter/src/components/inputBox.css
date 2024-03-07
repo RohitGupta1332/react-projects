@@ -1,0 +1,23 @@
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 5px;
+    margin: 10px;
+}
+p{
+    margin: 0;
+}
+.currency{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 5px;
+    margin: 10px;
+
+}
