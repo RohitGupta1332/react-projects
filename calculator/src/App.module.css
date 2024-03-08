@@ -1,0 +1,14 @@
+.calculator{
+    width: 270px;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+
+.display{
+    width: 220px;
+    font-size: 25px;
+    text-align: right;
+    padding: 7px;
+    margin: 14px;
+}
