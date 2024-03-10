@@ -13,7 +13,7 @@ function Home() {
             title: "Horror"
         },
         {
-            img: "https://m.media-amazon.com/images/I/51IG1hLBZWL._SX342_SY445_.jpg",
+            img: "https://m.media-amazon.com/images/I/61-hMfd7NGL._SY466_.jpg",
             title: "Finance"
         },
         {
@@ -29,10 +29,10 @@ function Home() {
         <div className="home-container">
             <img src={bookImage} className="img-fluid" style={{ objectFit: 'cover', maxHeight: '400px', width: '100%' }} alt="..." />
             <h1 className="display-3 p-3 mx-3 my-1">Categories</h1>
-            <div class="categories-box" >
+            <div className="categories-box" >
                 {
-                    books.map((book) => (
-                        <Card img={book.img} title={book.title}></Card>
+                    books.map((book, index) => (
+                        <Card key={index} img={book.img} title={book.title}></Card>
                     ))
                 }
             </div>
