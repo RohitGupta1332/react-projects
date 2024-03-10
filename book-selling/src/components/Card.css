@@ -1,0 +1,6 @@
+.card-container img{
+    width: 80%;
+    height: 80%;
+    min-width: 200px;
+    object-fit: cover;
+}
