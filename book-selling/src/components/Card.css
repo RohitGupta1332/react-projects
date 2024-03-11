@@ -9,7 +9,8 @@
 .card-container img{
     width: 70%;
     height: 80%;
-    min-width: 200px;
+    padding: 5px;
+    margin: 5px;
 }
 .card-container{
     border: 1px solid grey;
@@ -19,7 +20,7 @@
     align-items: center;
     margin: 8px;
     width: 18%;
-    min-width: 280px;
+    min-width: 140px;
     border-radius: 10px;
 
 }
