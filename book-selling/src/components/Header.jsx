@@ -14,18 +14,18 @@ function Header() {
                 <NavLink className="nav-link active" aria-current="page" href="#">Home</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" href="#">Link</NavLink>
+                <NavLink className="nav-link" to="/books">Books</NavLink>
               </li>
               <li className="nav-item dropdown">
                 <NavLink className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Categories
                 </NavLink>
                 <ul className="dropdown-menu">
-                  <li><NavLink className="dropdown-item" href="#">Horror</NavLink></li>
-                  <li><NavLink className="dropdown-item" href="#">Mysteries</NavLink></li>
-                  <li><NavLink className="dropdown-item" href="#">Finance</NavLink></li>
-                  <li><NavLink className="dropdown-item" href="#">Spirtuality</NavLink></li>
-                  <li><NavLink className="dropdown-item" href="#">Health/Fitness</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/categories/horror">Horror</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/categories/mysteries">Mysteries</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/categories/finance">Finance</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/categories/religious">Religious</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/categories/health">Health/Fitness</NavLink></li>
 
                 </ul>
               </li>

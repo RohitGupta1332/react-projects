@@ -1,11 +1,12 @@
-import './Card.css'
-function Card({img, title}) {
+import { Link } from "react-router-dom"
+
+function Card({ img, title }) {
     return (
 
-        <div className="card-container">
+        <Link className="card-container" to={`/categories/${title.toLowerCase()}`} style={{ textDecoration: 'none', color: "black"}}>
             <img src={img} className="card-img-top" alt="..." />
             <h5 className="display-6">{title}</h5>
-        </div>
+        </Link>
     )
 }
 export default Card
