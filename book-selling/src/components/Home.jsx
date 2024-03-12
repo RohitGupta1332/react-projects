@@ -27,6 +27,10 @@ function Home() {
         {
             img: "https://m.media-amazon.com/images/I/91RTk4zk+QL._AC_UY327_FMwebp_QL65_.jpg",
             title: "Religious"
+        },
+        {
+            img: "https://m.media-amazon.com/images/I/71xWWxjzF7L._AC_UY327_FMwebp_QL65_.jpg",
+            title: "Kids"
         }
     ]
     return (
@@ -95,6 +99,12 @@ function Home() {
                     <h5>₹440</h5>
                 </div>
                 <div className="card-container">
+                    <img src="https://m.media-amazon.com/images/I/7113F2UOhqL._AC_UY327_FMwebp_QL65_.jpg" alt="" />
+                    <h4>Spaceboy</h4>
+                    <h6>&gt; David Walliams</h6>
+                    <h5>₹374</h5>
+                </div>
+                <div className="card-container">
                     <img src="https://m.media-amazon.com/images/I/410SBqmsPdL._SY445_SX342_.jpg" alt="" />
                     <h4>The 5 AM Club</h4>
                     <h6>&gt;Robin Sharma</h6>
@@ -107,6 +117,12 @@ function Home() {
             <div className="categories-box">
                 <div className="card-container">
                     <img src="https://m.media-amazon.com/images/I/41-tZGcVRkL._SX342_SY445_.jpg" alt="" />
+                    <h4>Knowledge Encyclopedia</h4>
+                    <h6>&gt;  Wonder House Books </h6>
+                    <h5>₹600</h5>
+                </div>
+                <div className="card-container">
+                    <img src="https://m.media-amazon.com/images/I/918G9WKcfpL._AC_UY327_FMwebp_QL65_.jpg" alt="" />
                     <h4>Hindu Mythology - Vedic and Puranic</h4>
                     <h6>&gt; William J. Wilkins</h6>
                     <h5>₹249</h5>

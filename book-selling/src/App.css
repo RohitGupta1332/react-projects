@@ -9,8 +9,8 @@
 .card-container img{
     width: 70%;
     height: 80%;
-    padding: 5px;
-    margin: 5px;
+    padding: 2px;
+    margin: 2px;
 }
 .card-container{
     border: 1px solid grey;
@@ -20,7 +20,7 @@
     align-items: center;
     text-align: center;
     margin: 8px;
-    width: 18%;
+    width: 15%;
     min-width: 140px;
     border-radius: 10px;
 
@@ -28,8 +28,11 @@
 .card-container:hover{
     transform: scale(1.08);
 }
-h5{
-    margin: 10px;
+h5, h4{
+    font-size: 1.5vw;
+}
+h6{
+    font-size: 1vw;
 }
 
 .books-container{
