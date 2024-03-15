@@ -5,7 +5,7 @@ function Card({ img, title }) {
 
         <Link className="card-container" to={`/categories/${title.toLowerCase()}`} style={{ textDecoration: 'none', color: "black"}}>
             <img src={img} className="card-img-top" alt="..." />
-            <h5 className="display-6" style={{fontSize: "2vw"}}>{title}</h5>
+            <h5 className="display-6" style={{fontSize: "clamp(12px, 1.5vw, 20px)"}}>{title}</h5>
         </Link>
     )
 }

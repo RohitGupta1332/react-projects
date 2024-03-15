@@ -78,37 +78,31 @@ function Home() {
             <div className="card-container">
                     <img src="https://m.media-amazon.com/images/I/81Ls+SBCLiL._SY466_.jpg" alt="" />
                     <h4>Atomic Habits</h4>
-                    <h6>&gt; James Clear</h6>
                     <h5>₹500</h5>
                 </div>
                 <div className="card-container">
                     <img src="https://m.media-amazon.com/images/I/81n6auLS9aS._SY466_.jpg" alt="" />
                     <h4>Three Hours</h4>
-                    <h6>&gt; Rosamund Lupton</h6>
                     <h5>₹384</h5>
                 </div>
                 <div className="card-container">
                     <img src="https://m.media-amazon.com/images/I/41E+2EfN3NL._SY445_SX342_.jpg" alt="" />
                     <h4>The Psychology of Money</h4>
-                    <h6>&gt;Morgan Housel</h6>
                     <h5>₹299</h5>
                 </div>
                 <div className="card-container">
                     <img src="https://m.media-amazon.com/images/I/81wiMPTSFuL._SY466_.jpg" alt="" />
                     <h4>Shri Ram Charitmanas</h4>
-                    <h6>&gt;Gita Press Gorakhpur</h6>
                     <h5>₹440</h5>
                 </div>
                 <div className="card-container">
                     <img src="https://m.media-amazon.com/images/I/7113F2UOhqL._AC_UY327_FMwebp_QL65_.jpg" alt="" />
                     <h4>Spaceboy</h4>
-                    <h6>&gt; David Walliams</h6>
                     <h5>₹374</h5>
                 </div>
                 <div className="card-container">
                     <img src="https://m.media-amazon.com/images/I/410SBqmsPdL._SY445_SX342_.jpg" alt="" />
                     <h4>The 5 AM Club</h4>
-                    <h6>&gt;Robin Sharma</h6>
                     <h5>₹240</h5>
                 </div>
             </div>
@@ -119,37 +113,31 @@ function Home() {
                 <div className="card-container">
                     <img src="https://m.media-amazon.com/images/I/41-tZGcVRkL._SX342_SY445_.jpg" alt="" />
                     <h4>Knowledge Encyclopedia</h4>
-                    <h6>&gt;  Wonder House Books </h6>
                     <h5>₹600</h5>
                 </div>
                 <div className="card-container">
                     <img src="https://m.media-amazon.com/images/I/918G9WKcfpL._AC_UY327_FMwebp_QL65_.jpg" alt="" />
                     <h4>Hindu Mythology - Vedic and Puranic</h4>
-                    <h6>&gt; William J. Wilkins</h6>
                     <h5>₹249</h5>
                 </div>
                 <div className="card-container">
                     <img src="https://m.media-amazon.com/images/I/410bFYkn9qL._SX342_SY445_.jpg" alt="" />
                     <h4>Yoga & Stress Management </h4>
-                    <h6>&gt; Acharya Yatendra </h6>
                     <h5>₹159</h5>
                 </div>
                 <div className="card-container">
                     <img src="https://m.media-amazon.com/images/I/71vllLbpsdL._SY466_.jpg" alt="" />
                     <h4>The Intelligent Investor</h4>
-                    <h6>&gt;  Benjamin Graham </h6>
                     <h5>₹340</h5>
                 </div>
                 <div className="card-container">
                     <img src="https://m.media-amazon.com/images/I/41TyduBWCdL._SY445_SX342_.jpg" alt="" />
                     <h4>Meditations </h4>
-                    <h6>&gt; Marcus Aurelius</h6>
                     <h5>₹149</h5>
                 </div>
                 <div className="card-container">
                     <img src="https://m.media-amazon.com/images/I/81n6auLS9aS._SY466_.jpg" alt="" />
                     <h4>Three Hours</h4>
-                    <h6>&gt; Rosamund Lupton</h6>
                     <h5>₹384</h5>
                 </div>
             </div>
