@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function BookItems({ data }) {
     return (
-        <Link key={data.id} className="book-items shadow p-3 bg-body-tertiary rounded">
+        <Link to={`/getbyid/${data.id}`}key={data.id} className="book-items shadow p-3 bg-body-tertiary rounded">
             <img src={data.imgurl} alt="" />
             <div className="details">
                 <h4>{data.name}</h4>

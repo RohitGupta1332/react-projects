@@ -11,7 +11,7 @@ function Home() {
     const books = [
         {
             img: "https://m.media-amazon.com/images/I/91LsoIWuOmL._SY466_.jpg",
-            title: "Myteries"
+            title: "Mysteries"
         },
         {
             img: "https://m.media-amazon.com/images/I/61-x37JrKwL._SY466_.jpg",

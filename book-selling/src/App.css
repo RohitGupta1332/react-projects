@@ -13,17 +13,19 @@
     margin: 2px;
 }
 .card-container{
-    border: 1px solid grey;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 8px;
     width: 15%;
     min-width: 100px;
-    border-radius: 10px;
-
+    margin: 0.25rem;
+    box-shadow: var(--bs-box-shadow);
+    --bs-bg-opacity: 1;
+    padding: 1rem;
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+    border-radius: 0.25rem;
 }
 .card-container:hover{
     transform: scale(1.08);
@@ -44,13 +46,6 @@ h6{
     font-weight:lighter;
 
 }
-
-.books-container{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
 .sidebar{
     width: 20%;
     border: 1px solid grey;
@@ -65,14 +60,23 @@ a{
 .book-items {
     flex: 0 0 auto;
     text-align: center;
-    width: 40%;
+    width: 45%;
     max-width: 200px;
     margin: 10px;
-  }
-  
+}
+.book-items:hover{
+    transform: scale(1.08);
+}
+
+.books-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 .book-items img{
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
     max-width: 200px;
     margin: 10px;
 }
