@@ -11,7 +11,7 @@ function AllBooks() {
 
     const param = useParams()
     const category = param.category;
-    
+
     useEffect(() => {
         // Fetch data based on the category parameter
         if (category && category !== "allbooks") {
@@ -29,7 +29,11 @@ function AllBooks() {
 
     if (!data) {
         return (
-            <h1>Loading...</h1>
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
         )
     }
     return (
