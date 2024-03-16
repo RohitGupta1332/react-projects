@@ -28,21 +28,28 @@
 .card-container:hover{
     transform: scale(1.08);
 }
-h1{
-    font-size: clamp(17px, 2vw, 32px);
+/* h1{
+    font-size: clamp(17px, 1.5vw, 30px);
+    font-weight:normal;
     margin: 0;
-}
+} */
 h5, h4{
     font-size: clamp(12px, 1.5vw, 20px);
     padding: 3px;
+    font-weight: normal;
 }
 h6{
     font-size: clamp(10px, 1vw, 18px);
     padding: 3px;
+    font-weight:lighter;
+
 }
 
 .books-container{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .sidebar{
     width: 20%;
@@ -55,15 +62,17 @@ a{
     text-decoration: none !important;
     color: black;
 }
-.book-items{
-    flex: 1 1 200px; /* Make each item take equal width initially (200px in this example) */
-
+.book-items {
+    flex: 0 0 auto;
     text-align: center;
-    margin: 2%;
-    align-items: center;
-}
+    width: 40%;
+    max-width: 200px;
+    margin: 10px;
+  }
+  
 .book-items img{
     width: 30%;
     height: 30%;
     max-width: 200px;
+    margin: 10px;
 }

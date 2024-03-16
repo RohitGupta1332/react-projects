@@ -15,7 +15,7 @@ function AllBooks(){
         })
     },[])
     return (
-        <div className="books-container d-flex flex-wrap align-items-center justify-content-center">
+        <div className="books-container">
             {
                 data && data.map(book => (
                     <BooksItems key={book.id} data={book}></BooksItems>
