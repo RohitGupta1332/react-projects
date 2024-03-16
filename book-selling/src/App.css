@@ -28,6 +28,10 @@
 .card-container:hover{
     transform: scale(1.08);
 }
+h1{
+    font-size: clamp(17px, 2vw, 32px);
+    margin: 0;
+}
 h5, h4{
     font-size: clamp(12px, 1.5vw, 20px);
     padding: 3px;
@@ -46,4 +50,20 @@ h6{
 }
 .books{
     width: 80%;
+}
+a{
+    text-decoration: none !important;
+    color: black;
+}
+.book-items{
+    flex: 1 1 200px; /* Make each item take equal width initially (200px in this example) */
+
+    text-align: center;
+    margin: 2%;
+    align-items: center;
+}
+.book-items img{
+    width: 30%;
+    height: 30%;
+    max-width: 200px;
 }

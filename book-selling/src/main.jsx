@@ -5,7 +5,7 @@ import './index.css'
 import Home from './components/Home.jsx'
 import { RouterProvider } from 'react-router-dom'
 import { createBrowserRouter } from 'react-router-dom'
-import Books from './components/books.jsx'
+import AllBooks from './components/AllBooks.jsx'
 
 const router = createBrowserRouter([
   {
@@ -17,8 +17,12 @@ const router = createBrowserRouter([
       element: <Home/>
       },
       {
+        path: "/allbooks",
+        element: <AllBooks/>
+      },
+      {
         path: "/categories/:categoryName",
-        element: <Books/>
+        element: <AllBooks/>
       }
     ]
   }
