@@ -2,13 +2,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import bookImage1 from '../images/book2.jpg'
 import bookImage2 from '../images/book3.jpg'
 import bookImage4 from '../images/book4.jpg'
-
+import BookItems from './BookItems';
 
 import Card from './Card';
 
 function Home() {
 
-    const books = [
+    const category = [
         {
             img: "https://m.media-amazon.com/images/I/91LsoIWuOmL._SY466_.jpg",
             title: "Mysteries"
@@ -34,6 +34,108 @@ function Home() {
             title: "Kids"
         }
     ]
+
+    const top_seller = [
+        {
+            id: 15,
+            imgurl: "https://m.media-amazon.com/images/I/81Ls+SBCLiL._SY466_.jpg",
+            name: "Atomic Habits",
+            author: "James Clear",
+            oldprice: 799,
+            newprice: 999
+        },
+        {
+            id: 30,
+            imgurl: "https://m.media-amazon.com/images/I/81n6auLS9aS._AC_UY327_FMwebp_QL65_.jpg",
+            name: "Three Hours",
+            author: "Rosamund Lupton",
+            oldprice: 499,
+            newprice: 384
+        },
+        {
+            id: 31,
+            imgurl: "https://m.media-amazon.com/images/I/61-hMfd7NGL._AC_UY327_FMwebp_QL65_.jpg",
+            name: "The Psychology of Money",
+            author: "Morgan Housel",
+            oldprice: 399,
+            newprice: 275
+        },
+        {
+            id: 28,
+            imgurl: "https://m.media-amazon.com/images/I/91y46ttZCwL._AC_UY327_FMwebp_QL65_.jpg",
+            name: "Shri Ramcharitmanas",
+            author: "Goswami Tulsidas",
+            oldprice: 665,
+            newprice: 450
+        },
+        {
+            id: 32,
+            imgurl: "https://m.media-amazon.com/images/I/7113F2UOhqL._AC_UY327_FMwebp_QL65_.jpg",
+            name: "Spaceboy",
+            author: "Orson Scott Card",
+            oldprice: 499,
+            newprice: 375
+        },
+        {
+            id: 33,
+            imgurl: "https://m.media-amazon.com/images/I/618ZOX7UNNL._AC_UY327_FMwebp_QL65_.jpg",
+            name: "The 5 AM Club",
+            author: " Robin Sharma",
+            oldprice: 399,
+            newprice: 240
+        }
+    ]
+    const recommended = [
+        {
+            id: 34,
+            imgurl: "https://m.media-amazon.com/images/I/61je1xWmzoL._AC_UY327_FMwebp_QL65_.jpg",
+            name: "Hindu Mythology - Vedic and Puranic",
+            author: "W.J. Wilkins",
+            oldprice: 349,
+            newprice: 249
+        },
+        {
+            id: 35,
+            imgurl: "https://m.media-amazon.com/images/I/918G9WKcfpL._AC_UY327_FMwebp_QL65_.jpg",
+            name: "Knowledge Encyclopedia - Our Planet Earth",
+            author: "DK Publishing",
+            oldprice: 849,
+            newprice: 649
+        },
+        {
+            id: 36,
+            imgurl: "https://m.media-amazon.com/images/I/617htgAlAGL._AC_UY327_FMwebp_QL65_.jpg",
+            name: "Yoga & Stress Management",
+            author: "Swami Adhyatmananda",
+            oldprice: 199,
+            newprice: 159
+        },
+        {
+            id: 2,
+            imgurl: "https://m.media-amazon.com/images/I/91+t0Di07FL._AC_UY327_FMwebp_QL65_.jpg",
+            name: "The Intelligent Investor",
+            author: "Benjamin Graham",
+            oldprice: 799,
+            newprice: 583
+        },
+        {
+            id: 37,
+            imgurl: "https://m.media-amazon.com/images/I/81ZeeOjADFL._AC_UY327_FMwebp_QL65_.jpg",
+            name: "Meditations",
+            author: "Marcus Aurelius",
+            oldprice: 199,
+            newprice: 139
+        },
+        {
+            id: 30,
+            imgurl: "https://m.media-amazon.com/images/I/81n6auLS9aS._AC_UY327_FMwebp_QL65_.jpg",
+            name: "Three Hours",
+            author: "Rosamund Lupton",
+            oldprice: 499,
+            newprice: 384
+        }
+    ]
+
     return (
         <div className="home-container">
             <div id="carouselExampleIndicators" className="carousel slide"  >
@@ -66,80 +168,29 @@ function Home() {
             <h4 className="display-5 p-3 mx-1 my-1">Categories</h4>
             <div className="categories-box" >
                 {
-                    books.map((book, index) => (
+                    category.map((book, index) => (
                         <Card key={index} img={book.img} title={book.title}></Card>
                     ))
                 }
             </div>
 
             <h4 className="display-5 p-3 mx-1 my-1">Top-Seller</h4>
-
             <div className="categories-box">
-            <div className="card-container">
-                    <img src="https://m.media-amazon.com/images/I/81Ls+SBCLiL._SY466_.jpg" alt="" />
-                    <h4>Atomic Habits</h4>
-                    <h5>₹500</h5>
-                </div>
-                <div className="card-container">
-                    <img src="https://m.media-amazon.com/images/I/81n6auLS9aS._SY466_.jpg" alt="" />
-                    <h4>Three Hours</h4>
-                    <h5>₹384</h5>
-                </div>
-                <div className="card-container">
-                    <img src="https://m.media-amazon.com/images/I/41E+2EfN3NL._SY445_SX342_.jpg" alt="" />
-                    <h4>The Psychology of Money</h4>
-                    <h5>₹299</h5>
-                </div>
-                <div className="card-container">
-                    <img src="https://m.media-amazon.com/images/I/81wiMPTSFuL._SY466_.jpg" alt="" />
-                    <h4>Shri Ram Charitmanas</h4>
-                    <h5>₹440</h5>
-                </div>
-                <div className="card-container">
-                    <img src="https://m.media-amazon.com/images/I/7113F2UOhqL._AC_UY327_FMwebp_QL65_.jpg" alt="" />
-                    <h4>Spaceboy</h4>
-                    <h5>₹374</h5>
-                </div>
-                <div className="card-container">
-                    <img src="https://m.media-amazon.com/images/I/410SBqmsPdL._SY445_SX342_.jpg" alt="" />
-                    <h4>The 5 AM Club</h4>
-                    <h5>₹240</h5>
-                </div>
+                {
+                    top_seller.map((book) => (
+                        <BookItems data={book}></BookItems>
+                    ))
+                }
             </div>
 
 
             <h4 className="display-5 p-3 mx-1 my-1">Recommended</h4>
             <div className="categories-box">
-                <div className="card-container">
-                    <img src="https://m.media-amazon.com/images/I/41-tZGcVRkL._SX342_SY445_.jpg" alt="" />
-                    <h4>Knowledge Encyclopedia</h4>
-                    <h5>₹600</h5>
-                </div>
-                <div className="card-container">
-                    <img src="https://m.media-amazon.com/images/I/918G9WKcfpL._AC_UY327_FMwebp_QL65_.jpg" alt="" />
-                    <h4>Hindu Mythology - Vedic and Puranic</h4>
-                    <h5>₹249</h5>
-                </div>
-                <div className="card-container">
-                    <img src="https://m.media-amazon.com/images/I/410bFYkn9qL._SX342_SY445_.jpg" alt="" />
-                    <h4>Yoga & Stress Management </h4>
-                    <h5>₹159</h5>
-                </div>
-                <div className="card-container">
-                    <img src="https://m.media-amazon.com/images/I/71vllLbpsdL._SY466_.jpg" alt="" />
-                    <h4>The Intelligent Investor</h4>
-                    <h5>₹340</h5>
-                </div>
-                <div className="card-container">
-                    <img src="https://m.media-amazon.com/images/I/41TyduBWCdL._SY445_SX342_.jpg" alt="" />
-                    <h4>Meditations </h4>
-                    <h5>₹149</h5>
-                </div>
-                <div className="card-container">
-                    <img src="https://m.media-amazon.com/images/I/81n6auLS9aS._SY466_.jpg" alt="" />
-                    <h4>Three Hours</h4>
-                    <h5>₹384</h5>
-                </div>
+                {
+                    recommended.map((book) => (
+                        <BookItems data={book}></BookItems>
+                    ))
+                }
             </div>
         </div>
     )
