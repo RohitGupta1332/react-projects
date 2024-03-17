@@ -1,5 +1,7 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import {Link, NavLink} from 'react-router-dom'
+import { FaCartArrowDown } from "react-icons/fa";
+
 function Header() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -29,6 +31,9 @@ function Header() {
                   <li><NavLink className="dropdown-item" to="/categories/kids">Kids</NavLink></li>
 
                 </ul>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/cart">Cart <FaCartArrowDown /></NavLink>
               </li>
             </ul>
             <form className="d-flex" role="search">

@@ -7,6 +7,7 @@ import { RouterProvider } from 'react-router-dom'
 import { createBrowserRouter } from 'react-router-dom'
 import AllBooks from './components/AllBooks.jsx'
 import BookDetails from './components/BookDetails.jsx'
+import Cart from './components/Cart.jsx'
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/getbyid/:id",
         element: <BookDetails/>
+      },
+      {
+        path: "/cart",
+        element: <Cart/>
       }
     ]
   }

@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { getById } from "../hooks/getById";
 import { useParams } from "react-router-dom";
+import { useCart } from "../context/useCart";
 function BookDetails() {
     const [data, setData] = useState(null)
+    const cart = useCart()
 
     const params = useParams()
     const id = params.id
@@ -22,6 +24,10 @@ function BookDetails() {
                 </div>
             </div>
         )
+    }
+
+    const handleOnClick = () => {
+        cart.setItems([...cart.items, data])
     }
 
     return (
@@ -49,7 +55,7 @@ function BookDetails() {
                         <h1>&#40;{Math.round((data.oldprice - data.newprice) * 100 / data.oldprice)}%&#41;</h1>
                     </div>
                 </div>
-                <button className="btn btn-success my-3">Add to cart</button>
+                <button className="btn btn-success my-3" onClick={handleOnClick}>Add to cart</button>
             </div>
         </div>
     )
