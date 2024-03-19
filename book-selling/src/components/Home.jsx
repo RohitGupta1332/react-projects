@@ -178,7 +178,7 @@ function Home() {
             <div className="categories-box">
                 {
                     top_seller.map((book) => (
-                        <BookItems data={book}></BookItems>
+                        <BookItems key={book.id} data={book}></BookItems>
                     ))
                 }
             </div>
@@ -188,7 +188,7 @@ function Home() {
             <div className="categories-box">
                 {
                     recommended.map((book) => (
-                        <BookItems data={book}></BookItems>
+                        <BookItems key={book.id} data={book}></BookItems>
                     ))
                 }
             </div>

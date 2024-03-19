@@ -1,44 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import Home from './components/Home.jsx'
-import { RouterProvider } from 'react-router-dom'
-import { createBrowserRouter } from 'react-router-dom'
-import AllBooks from './components/AllBooks.jsx'
-import BookDetails from './components/BookDetails.jsx'
-import Cart from './components/Cart.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter and Routes
+import App from './App.jsx';
+import './index.css';
+import Home from './components/Home.jsx';
+import AllBooks from './components/AllBooks.jsx';
+import BookDetails from './components/BookDetails.jsx';
+import Cart from './components/Cart.jsx';
+import ResultSearch from './components/ResultSearch.jsx';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App/>,
-    children: [
-      {
-        path: "",
-      element: <Home/>
-      },
-      {
-        path: "/allbooks",
-        element: <AllBooks/>
-      },
-      {
-        path: "/categories/:category",
-        element: <AllBooks/>
-      },
-      {
-        path: "/getbyid/:id",
-        element: <BookDetails/>
-      },
-      {
-        path: "/cart",
-        element: <Cart/>
-      }
-    ]
-  }
-])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
+          <Route path="allbooks" element={<AllBooks />} />
+          <Route path="categories/:category" element={<AllBooks />} />
+          <Route path="getbyid/:id" element={<BookDetails />} />
+          <Route path="cart" element={<Cart />} />
+          <Route path="search/:book" element={<ResultSearch/>}/>
+        </Route>
+      </Routes>
+    </Router>
   </React.StrictMode>,
-)
+);
