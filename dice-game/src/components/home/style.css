@@ -1,0 +1,39 @@
+button {
+    width: 220px;
+    height: 44px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 144px;
+}
+
+.top-container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust based on your desired container width */
+    max-width: 1200px; /* Optional: cap the maximum width */
+}
+
+.left-section,
+.right-section {
+    width: 50%;
+    
+}
+
+.left-section img {
+    max-width: 100%; /* Ensure image fits within the section */
+    height: auto;    /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure proper scaling */
+    border-radius: 5px; /* Optional styling */
+}
+
+.right-section {
+    text-align: center; /* Center align text and button */
+}

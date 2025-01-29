@@ -11,5 +11,6 @@ export async function searchBook(book){
     }
     catch(error){
         console.log(error)
+        return "error"
     }
 }

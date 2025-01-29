@@ -1,0 +1,17 @@
+form{
+    width: 50%;
+    min-width: 300px;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+
+}
+.post-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    width: 50%;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter and Routes
+import ReactDOM from 'react-dom/client'; // Corrected import from 'react-dom/client'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import App from './App.jsx';
 import './index.css';
 import Home from './components/Home.jsx';
@@ -16,12 +16,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
           <Route path="allbooks" element={<AllBooks />} />
-          <Route path="categories/:category" element={<AllBooks />} />
+          <Route path="categories/:category" element={<AllBooks />} /> 
           <Route path="getbyid/:id" element={<BookDetails />} />
           <Route path="cart" element={<Cart />} />
-          <Route path="search/:book" element={<ResultSearch/>}/>
+          <Route path="search/:book" element={<ResultSearch />} />
         </Route>
       </Routes>
     </Router>
-  </React.StrictMode>,
+  </React.StrictMode>
 );

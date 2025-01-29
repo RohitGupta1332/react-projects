@@ -9,19 +9,24 @@ function ResultSearch() {
     const cart = useCart()
 
     const [data, setData] = useState()
+    const [error, setError] = useState(null); // State to manage error message
 
     useEffect(() => {
-        try {
-            searchBook(param.book)
+        setError(null); // Reset error state on each new search
+        searchBook(param.book)
                 .then((res) => {
+                    if(res === "error"){
+                        setError("Not Found!!")
+                    }
                     setData(res)
                 })
-        } catch (error) {
-            return (
-                <div className="h1">Not Found!!!</div>
-            )
-        }
-    }, [])
+    }, [param])
+
+    if (error) {
+        return (
+            <div className="h1 text-center">{error}</div> // Render error message
+        )
+    }
 
     if (!data) {
         return (
@@ -34,7 +39,7 @@ function ResultSearch() {
     }
 
     const handleOnClick = () => {
-        cart.setItems([...cart.items, data])
+        cart.setItems([...cart.items, {imgurl: data.imgurl, name: data.name, newprice: data.newprice, quantity: 1}])
     }
 
     return (

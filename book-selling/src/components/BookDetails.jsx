@@ -27,7 +27,7 @@ function BookDetails() {
     }
 
     const handleOnClick = () => {
-        cart.setItems([...cart.items, data])
+        cart.setItems([...cart.items, {imgurl: data.imgurl, name: data.name, newprice: data.newprice, quantity: 1}])
     }
 
     return (

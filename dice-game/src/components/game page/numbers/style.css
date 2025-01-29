@@ -1,0 +1,15 @@
+.number-container{
+    width: 52px;
+    height: 52px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-weight: 700;
+}
+
+.select-number-container{
+    display: flex;
+    margin-left: 500px;
+}
